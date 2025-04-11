@@ -1,18 +1,26 @@
+
+
+/* IMPORTANDO FONTE DE UMA BIBLIOTECA */
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-* {
-    font-family: "Barlow",'Courier New', Courier, monospace;
+*{
+    font-family: 'barlow';
 }
-
-
 
 body {
     background: black;
     margin: 0;
+    padding: 0;
 }
 
 .header {
     border-bottom: solid aqua 2px;
+}
+
+.titulo {
+    color: #32b9cd;
+    width: fit-content;
+    border-bottom: 2px solid #32b9cd;
 }
 
 .header .container .titulo {
@@ -25,7 +33,6 @@ body {
     list-style-type: none;
     display: flex;
     width: 350px;
-
     justify-content: space-around;
 }
 
@@ -36,41 +43,43 @@ body {
 
 .navbar a {
     color: yellow;
-    text-decoration: none;
 
+    text-decoration: none;   
 }
 
 .container {
     display: flex;
-    margin: auto;
     width: 80%;
+    margin: auto;
 }
 
-.header .container{
-    justify-content: 
-    space-between;
+.header .container {
+    justify-content: space-between;
     align-items: center;
 }
 
-/* banner */
-
-.banner{
+/* ADICIONANDO BACKGROUND IMG */
+.banner {
     background-image: url(../assets/imgs/bg-jelly-fish-para-home.png);
     height: 500px;
     color: white;
-
 }
+
 .banner .container {
     width: 500px;
     height: 100%;
     align-items: center;
 }
-.banner.container p {
+
+.banner .container p {
     font-size: 54px;
 }
-.banner.container p span{
-    font-weight: 800;
+
+.banner .container p span {
+    font-weight: bold;
 }
+
+/* SOCIAL */ 
 
 .social {
     background: white;
@@ -92,31 +101,117 @@ body {
     justify-content: space-evenly;
 }
 
-.box{
+.box {
     display: flex;
     flex-direction: column;
-
     align-items: center;
 }
 
-.box p{
+.box p {
     text-align: center;
 }
 
 .box h4 {
-    color: crimson;
-    font-weight: 600;
+    color: 364dab;
+    font-weight: 900;
+}
+/* MONTANDO CSS DO FOOTER */
+
+.footer {
+    background: darkcyan;
 }
 
-
-.footer{
-    background: aqua;
-
-}
-.footer.container{
+.footer .container {
     justify-content: center;
     align-items: center;
     color: white;
+    
 
-    height: 200px;
+    height: 200px
+}
+
+/* PAGINA DO LOGIN */
+
+.login {
+    background-image: url(../assets/imgs/bg-jelly-fish-para_outras_pags.png);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login .card-login {
+    width: 520px;
+    background-color: #e8e8e8;
+    border-radius: 7px;
+    margin: 150px;
+    padding: 20px;
+}
+
+.container .card-login h2 {
+    color: #364dab;
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario .campo {
+    display: flex;
+    flex-direction: column;
+    color: #364dab;
+    font-weight: bold;
+}
+
+.botao {
+    background: #364dab;
+    color: white;
+    border-radius: 3px;
+    display: flex;
+    width: 80px;
+    justify-content: center;
+    align-self: center;
+}
+
+.login .campo input::placeholder {
+    text-align: center;
+}
+
+#senha_input, #email_input {
+    border-radius: 7px;
+    border-color: #05ffff;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* CADASTRO */
+
+.login .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login .card-cadastro {
+    width: 520px;
+    background-color: #e8e8e8;
+    border-radius: 7px;
+    margin: 90px;
+    padding: 20px;
+}
+
+.container .card-cadastro h2 {
+    color: #364dab;
+    text-align: center;
+}
+
+#codigo_input, #nome_input, #confirmacao_senha_input {
+    border-radius: 7px;
+    border-color: #05ffff;
+    padding: 5px;
+    margin: 5px;
 }
